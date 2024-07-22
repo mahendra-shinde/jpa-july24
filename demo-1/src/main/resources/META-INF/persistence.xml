@@ -8,7 +8,7 @@
         <!-- Console Application, you must use "RESOURCE_LOCAL" -->
         <persistence-unit name="PU1" transaction-type="RESOURCE_LOCAL" >
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>com.mahendra.model.Employee</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
         	<properties>
         		<property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
         		<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://4.224.117.18:3306/hr" />
